@@ -1,10 +1,10 @@
 
-var yaysayers = require(‘data/yaysayers.json’); // all the people
+var yaysayers = require('data/yaysayers.json'); // all the people
 var modes = ['make', 'connect', 'hack', 'swim', 'dance', 'think', 'reflect', 'sing', 'imagine', 'love', 'celebrate', 'thank']; // for starters
-var seed =  require(‘libs/newPrimeGenerator.js’); // use newly discovered prime for uniqueness
-var asplode = require(’secret/hyperspace.js’); // hard to explain, but very, very effective in-the-moment algorithm 
-var transform = require(’secret/magicVoodooAwesomesauce.js’); // this changes everything
-var version = 001; // skip 000 the first time through (it’s a singularity)
+var seed =  require('libs/newPrimeGenerator.js'); // use newly discovered prime for uniqueness
+var asplode = require('secret/hyperspace.js'); // hard to explain, but very, very effective in-the-moment algorithm 
+var transform = require('secret/magicVoodooAwesomesauce.js'); // this changes everything
+var version = 001; // skip 000 the first time through (it's a singularity)
 
 var yxyy = function () {
      setInterval(function() {
@@ -25,11 +25,11 @@ var yxyy = function () {
 
 var yes = function () {
      for(i=0; i<yaysayers.length; i++) {
-          if (heart.state==‘no’) yaysayers[i].heart.state = ‘yes’;
-          if (mind.state==‘no’) yaysayers[i].mind.state = ‘yes’;
-          console.log(‘yessified’ + yaysers[i].name);
+          if (heart.state=='no') yaysayers[i].heart.state = 'yes';
+          if (mind.state=='no') yaysayers[i].mind.state = 'yes';
+          console.log('yessified' + yaysers[i].name);
      }
-     console.log(‘yessification complete’);
+     console.log('yessification complete');
 } 
 
 var serendipity = function () {
