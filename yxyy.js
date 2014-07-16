@@ -1,6 +1,6 @@
 
 var yaysayers = require(‘data/yaysayers.json’); // all the people
-var modes = [‘make', ‘connect’, ‘hack', ‘swim', ‘dance', ‘think', ‘reflect’, ’sing’, ‘imagine’, ‘love’, ‘celebrate’, ‘thank’]; // for starters
+var modes = ['make', 'connect', 'hack', 'swim', 'dance', 'think', 'reflect', 'sing', 'imagine', 'love', 'celebrate', 'thank']; // for starters
 var seed =  require(‘libs/newPrimeGenerator.js’); // use newly discovered prime for uniqueness
 var asplode = require(’secret/hyperspace.js’); // hard to explain, but very, very effective in-the-moment algorithm 
 var transform = require(’secret/magicVoodooAwesomesauce.js’); // this changes everything
