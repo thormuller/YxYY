@@ -2,7 +2,7 @@
 var yaysayers = require('data/yaysayers.json'); // all the people
 var modes = ['make', 'connect', 'hack', 'swim', 'dance', 'think', 'reflect', 'sing', 'imagine', 'love', 'celebrate', 'thank']; // for starters
 var seed =  require('libs/newPrimeGenerator.js'); // use newly discovered prime for uniqueness
-var asplode = require('secret/hyperspace.js'); // hard to explain, but very, very effective in-the-moment algorithm 
+var asplode = require('secret/hyperspace.js'); // hard to explain, but very, very effective in-the-moment algorithm
 var transform = require('secret/magicVoodooAwesomesauce.js'); // this changes everything
 var version = 001; // skip 000 the first time through (it's a singularity)
 
@@ -10,16 +10,16 @@ var yxyy = function () {
      setInterval(function() {
           yes();
           var env = realityDistortionField(seed());
-          if (!_.isFinite(yaysayers.awesome.length)) asplode(); 
-          if (_.uniq(yaysayers, function(yaysayer) {  return yaysayer.ideas; }) {
+          if (!_.isFinite(yaysayers.awesome.length)) asplode();
+          if (_.uniq(yaysayers, function(yaysayer) {  return yaysayer.ideas; })) {
                asplode();
           }
           if (version < 1000) {
-              version++; 
+              version++;
          } else {
               version = 000;
          }
-     }, (52 * 7 * 24* 60 * 60 * 1000);  //  repeat every 52 weeks
+     }, (52 * 7 * 24* 60 * 60 * 1000));  //  repeat every 52 weeks
 }
 
 
@@ -30,7 +30,7 @@ var yes = function () {
           console.log('yessified' + yaysers[i].name);
      }
      console.log('yessification complete');
-} 
+}
 
 var serendipity = function () {
       _.shuffle(modes); // mix up the modes for maximum surprise
@@ -40,13 +40,13 @@ var serendipity = function () {
           for (x=0;x<groupSize;x++) {
                groupMind.push(randomYaysayer());
           }
-          var spark = {mode: mode[i], group: groupMind); 
+          var spark = {mode: mode[i], group: groupMind};
          return spark;
      }
 }
 
 
-var realityDistortionField(seed) {
+var realityDistortionField = function(seed) {
      return transform(seed);
 }
 
