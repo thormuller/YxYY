@@ -5,6 +5,7 @@ var seed =  require('libs/newPrimeGenerator.js'); // use newly discovered prime 
 var asplode = require('secret/hyperspace.js'); // hard to explain, but very, very effective in-the-moment algorithm
 var transform = require('secret/magicVoodooAwesomesauce.js'); // this changes everything
 var version = 001; // skip 000 the first time through (it's a singularity)
+var gettingSleep = false; // necessary state in order to properly Yes
 
 var yxyy = function () {
      setInterval(function() {
@@ -24,6 +25,7 @@ var yxyy = function () {
 
 
 var yes = function () {
+     if (gettingSleep) gettingSleep = !gettingSleep; // in case of outside attempts to undermine necessary state
      for(i=0; i<yaysayers.length; i++) {
           if (heart.state=='no') yaysayers[i].heart.state = 'yes';
           if (mind.state=='no') yaysayers[i].mind.state = 'yes';
